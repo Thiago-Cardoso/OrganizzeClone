@@ -1,4 +1,4 @@
-package cursoandroid.cardoso.thiago.com.organizze;
+package cursoandroid.cardoso.thiago.com.organizze.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
+import cursoandroid.cardoso.thiago.com.organizze.R;
 import cursoandroid.cardoso.thiago.com.organizze.activity.CadastroActivity;
 import cursoandroid.cardoso.thiago.com.organizze.activity.LoginActivity;
 
