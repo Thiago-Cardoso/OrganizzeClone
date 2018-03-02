@@ -1,5 +1,6 @@
 package cursoandroid.cardoso.thiago.com.organizze.activity;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+
+import java.security.Principal;
 
 import cursoandroid.cardoso.thiago.com.organizze.R;
 import cursoandroid.cardoso.thiago.com.organizze.config.ConfiguracaoFirebase;
@@ -83,8 +86,12 @@ public class LoginActivity extends AppCompatActivity {
                 //verifo se o cadastro esta ok
                 if(task.isSuccessful()){
 
-                    Toast.makeText(LoginActivity.this,
-                            "Sucesso ao fazer login!", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(LoginActivity.this,
+                            //"Sucesso ao fazer login!", Toast.LENGTH_SHORT).show();
+
+                    //abrirTelaPrincipal();
+
+                    finish();
 
                 }else{
 
