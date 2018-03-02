@@ -14,10 +14,11 @@ public class MainActivity extends IntroActivity {
         super.onCreate(savedInstanceState);
        // setContentView(R.layout.activity_main);
 
+        //retiro os buttons voltar e avançar
         setButtonBackVisible(false);
         setButtonNextVisible(false);
 
-
+        //adiciono o fragment no slide
         addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_1)
