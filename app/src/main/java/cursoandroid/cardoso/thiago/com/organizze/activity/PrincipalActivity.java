@@ -1,5 +1,6 @@
 package cursoandroid.cardoso.thiago.com.organizze.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,13 +30,13 @@ public class PrincipalActivity extends AppCompatActivity {
         });*/
     }
 
-    public void adicionarDespesa(View view)
-    {
+    public void adicionarDespesa(View view) {
 
+        startActivity(new Intent(this, DespesasActivity.class));
     }
 
-    public void adicionarReceita(View view)
-    {
+    public void adicionarReceita(View view) {
 
+        startActivity(new Intent(this, ReceitasActivity.class));
     }
 }

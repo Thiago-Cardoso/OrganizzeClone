@@ -26,7 +26,6 @@
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
-        android:onClick="adicionarDespesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -40,7 +39,7 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_despesa"
-            android:onClick="adicionarReceita"
+            android:onClick="adicionarDespesa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_adicionar_branco_24dp"
@@ -51,6 +50,7 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_receita"
+            android:onClick="adicionarReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_adicionar_branco_24dp"
