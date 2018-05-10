@@ -43,7 +43,7 @@ public class DespesasActivity extends AppCompatActivity {
         //Preenche o campo data com a date atual
         campoData.setText(DateCustom.dataAtual());
 
-        //recuperarDespesaTotal();
+        recuperarDespesaTotal();
     }
 
     public void salvarDespesa(View view){
@@ -60,7 +60,7 @@ public class DespesasActivity extends AppCompatActivity {
             movimentacao.setTipo("d");
 
             //atualiza os valores
-            //Double despesaAtualizada = despesaTotal + valorRecuperado;
+           // Double despesaAtualizada = despesaTotal + valorRecuperado;
            // atualizarDespesa(despesaAtualizada);
 
             movimentacao.salvar(data);
@@ -115,6 +115,7 @@ public class DespesasActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Usuario usuario = dataSnapshot.getValue( Usuario.class );
+
                 despesaTotal = usuario.getDespesaTotal();
             }
 
