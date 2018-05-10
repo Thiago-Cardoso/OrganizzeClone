@@ -82,7 +82,7 @@ public class MainActivity extends IntroActivity {
 
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         //desloga o usuario
-       // autenticacao.signOut();
+        //autenticacao.signOut();
         //verifica se o usuario atual esta logado
         if(autenticacao.getCurrentUser() != null){
 
