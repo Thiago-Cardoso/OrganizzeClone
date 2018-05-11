@@ -60,10 +60,12 @@ public class DespesasActivity extends AppCompatActivity {
             movimentacao.setTipo("d");
 
             //atualiza os valores
-           // Double despesaAtualizada = despesaTotal + valorRecuperado;
-           // atualizarDespesa(despesaAtualizada);
+            Double despesaAtualizada = despesaTotal + valorRecuperado;
+            atualizarDespesa(despesaAtualizada);
 
             movimentacao.salvar(data);
+
+            finish();
         }
     }
 

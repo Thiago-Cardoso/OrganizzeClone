@@ -42,7 +42,7 @@ public class ReceitasActivity extends AppCompatActivity {
         //Preenche o campo data com a date atual
         campoData.setText(DateCustom.dataAtual());
 
-        //recuperarReceitaTotal();
+        recuperarReceitaTotal();
     }
 
     public void recuperarReceitaTotal(){
@@ -79,10 +79,12 @@ public class ReceitasActivity extends AppCompatActivity {
             movimentacao.setTipo("r");
 
             //atualiza os valores
-         //   Double receitaAtualizada = receitaTotal + valorRecuperado;
-           // atualizarReceita(receitaAtualizada);
+            Double receitaAtualizada = receitaTotal + valorRecuperado;
+            atualizarReceita(receitaAtualizada);
 
             movimentacao.salvar(data);
+
+            finish();
         }
     }
 
